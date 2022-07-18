@@ -1,0 +1,52 @@
+{
+  "vehicles": [
+    {
+      "brand": "Ford",
+      "category": "Minivan",
+      "model": "2015",
+      "color": "White",
+      "mileage": "5000",
+      "price": "1500",
+      "status": "In stock",
+      "img": "",
+      "soldDate": "",
+      "buyerName": "",
+      "address buyer": "",
+      "qty": "",
+      "sellerName": "",
+      "id": "1"
+    },
+    {
+      "brand": "Chryler",
+      "category": "Coupe",
+      "model": "2022",
+      "color": "Blue",
+      "mileage": "200",
+      "price": "1800",
+      "status": "Sold",
+      "img": "",
+      "soldDate": "",
+      "buyerName": "",
+      "address buyer": "",
+      "qty": "",
+      "sellerName": "",
+      "id": "2"
+    },
+    {
+      "brand": "Kia",
+      "category": "Suv",
+      "model": "2021",
+      "color": "Orange",
+      "mileage": "15",
+      "price": "2500",
+      "status": "",
+      "img": "",
+      "soldDate": "",
+      "buyerName": "",
+      "address buyer": "",
+      "qty": "",
+      "sellerName": "",
+      "id": "3"
+    }
+  ]
+}
