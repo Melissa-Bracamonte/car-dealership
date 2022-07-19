@@ -11,8 +11,8 @@ function App() {
 
   return (
       <Routes>
-        <Route exact path="/" element={<Login />} />
-        {user && <Route exact path="/home" element={<Home />} />}
+           <Route exact path="/" element={<Home />} />
+        {user && <Route exact path="/login" element={<Login />} />}
         {user && <Route exact path="/products" element={<Vehicles />} />}
         {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>

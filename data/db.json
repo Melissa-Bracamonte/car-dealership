@@ -8,7 +8,7 @@
       "mileage": "5000",
       "price": "1500",
       "status": "In stock",
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Melissa-Bracamonte/car-dealership/master/src/img/cars/fordMinivanWhite.png",
       "soldDate": "",
       "buyerName": "",
       "address buyer": "",
@@ -24,7 +24,7 @@
       "mileage": "500",
       "price": "1900",
       "status": "Sold",
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Melissa-Bracamonte/car-dealership/master/src/img/cars/toyotaPickup.png",
       "soldDate": "",
       "buyerName": "",
       "address buyer": "",
@@ -40,13 +40,13 @@
       "mileage": "800",
       "price": "1000",
       "status": "Sold",
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Melissa-Bracamonte/car-dealership/master/src/img/cars/HyundaiSedanGray.png",
       "soldDate": "",
       "buyerName": "",
       "address buyer": "",
       "qty": "",
       "sellerName": "",
-      "id": "2"
+      "id": "3"
     },
     {
       "brand": "Chryler",
@@ -62,7 +62,7 @@
       "address buyer": "",
       "qty": "",
       "sellerName": "",
-      "id": "2"
+      "id": "4"
     },
     {
       "brand": "Audi",
@@ -72,13 +72,13 @@
       "mileage": "2500",
       "price": "1300",
       "status": "Sold",
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Melissa-Bracamonte/car-dealership/master/src/img/cars/audiConvertibleBlack.png",
       "soldDate": "",
       "buyerName": "",
       "address buyer": "",
       "qty": "",
       "sellerName": "",
-      "id": "2"
+      "id": "5"
     },
     {
       "brand": "Kia",
@@ -94,7 +94,7 @@
       "address buyer": "",
       "qty": "",
       "sellerName": "",
-      "id": "3"
+      "id": "6"
     },
     {
       "brand": "Daewoo",
@@ -104,13 +104,13 @@
       "mileage": "150",
       "price": "1300",
       "status": "",
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Melissa-Bracamonte/car-dealership/master/src/img/cars/daewooSilverCompact.png",
       "soldDate": "",
       "buyerName": "",
       "address buyer": "",
       "qty": "",
       "sellerName": "",
-      "id": "3"
+      "id": "7"
     },
     {
       "brand": "Chevrolet",
@@ -120,13 +120,13 @@
       "mileage": "100",
       "price": "2300",
       "status": "",
-      "img": "",
+      "img": "https://raw.githubusercontent.com/Melissa-Bracamonte/car-dealership/master/src/img/cars/chevroletCoupeYellow.png",
       "soldDate": "",
       "buyerName": "",
       "address buyer": "",
       "qty": "",
       "sellerName": "",
-      "id": "3"
+      "id": "8"
     }
   ]
 }
