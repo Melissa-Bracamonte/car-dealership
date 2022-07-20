@@ -4,6 +4,7 @@ import imgDelete from "../../img/imgDelete.png";
 import imgEdit from "../../img/imgEdit.png";
 import addIcon from "../../img/addIcon.png";
 import { Modal } from "../modal/Modal";
+import Header from "../header/Header";
 
 const Vehicles = () => {
   const [products, setProducts] = useState([]);
@@ -36,7 +37,7 @@ const Vehicles = () => {
     setModalDelete(!modalDelete);
   };
 
-  const deleteVehicle= (id) => {
+  const deleteVehicle = (id) => {
     setIdDeletedProduct(id);
     toggleModalDelete();
   };
@@ -58,6 +59,8 @@ const Vehicles = () => {
 
   return (
     <>
+      <Header />
+
       <Modal
         onClickCloseModal={onClickHide}
         visible={objPopup.visibility}
@@ -86,6 +89,8 @@ const Vehicles = () => {
             <div className={styles.headerTable}>Mileage</div>
             <div className={styles.headerTable}>Price</div>
             <div className={styles.headerTable}>Status</div>
+            <div className={styles.headerTable}>Picture</div>
+
             <div className={styles.headerTable}>Edit</div>
             <div className={styles.headerTable}>Delete</div>
           </div>
@@ -100,6 +105,7 @@ const Vehicles = () => {
                   <div className={styles.itemTable}>{product.mileage}</div>
                   <div className={styles.itemTable}>{product.price}</div>
                   <div className={styles.itemTable}>{product.status}</div>
+                  <div className={styles.itemTable}><img src={product.img} alt="imgCar" className="imgCar"/></div>
                   <div className={styles.itemTable}>
                     <button className={styles.btnEditAndDelete}>
                       <img

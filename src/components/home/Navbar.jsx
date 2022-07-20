@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const logoStyle = {
     width: "100px",
-    height: "50px",
+    height: "35px",
   };
 
   return (
@@ -18,7 +18,9 @@ const Navbar = () => {
       <nav className="flex items-center justify-between flex-wrap bg-teal-900 p-6">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <span className="font-semibold text-xl tracking-tight">
-            <img src={logo} alt="logo" style={logoStyle} />
+            <a href="/">
+              <img src={logo} alt="logo" style={logoStyle} />
+            </a>
           </span>
         </div>
         <div className="block lg:hidden">
@@ -49,7 +51,7 @@ const Navbar = () => {
               Team
             </a>
             <a
-              href="#responsive-header"
+              href="/shoppingCart"
               className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
             >
               <i className="fa-solid fa-cart-shopping"></i>

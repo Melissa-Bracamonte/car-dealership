@@ -128,5 +128,27 @@
       "sellerName": "",
       "id": "8"
     }
+  ],
+  "carSold": [
+    {
+      "brand": "Daewoo",
+      "category": "Compact car",
+      "model": "2018",
+      "qty": "1",
+      "price": "2500",
+      "buyerName": "Laura Vanessa Sifuentes Aldama",
+      "addressBuyer": "CDMX GAM 07620",
+      "soldDate": "19/07/2022",
+      "sellerName": "Rocio Esther Alvarado Gomez",
+      "id": "9"
+    }
+  ],
+  "team": [
+    {
+      "employee": "Rocio Esther Alvarado Gomez",
+      "email": "rocio@cardealership.com",
+      "rol": "Seller",
+      "id": "10"
+    }
   ]
 }

@@ -4,13 +4,7 @@ import PropTypes from "prop-types";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 
-Modal.propTypes = {
-  attrProduct: PropTypes.object,
-  onClickCloseModal: PropTypes.func.isRequired,
-  visible: PropTypes.bool.isRequired,
-};
-
-export function Modal({ attrProduct, onClickCloseModal, visible }) {
+export function ModalSales({ attrProduct, onClickCloseModal, visible }) {
   const {
     register,
     handleSubmit,
@@ -22,10 +16,12 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
     setValue("brand", attrProduct?.brand);
     setValue("category", attrProduct?.category);
     setValue("model", attrProduct?.model);
-    setValue("color", attrProduct?.color);
-    setValue("mileage", attrProduct?.mileage);
+    setValue("qty", attrProduct?.qty);
     setValue("price", attrProduct?.price);
-    setValue("status", attrProduct?.status);
+    setValue("buyerName", attrProduct?.buyerName);
+    setValue("addressBuyer", attrProduct?.addressBuyer);
+    setValue("soldDate", attrProduct?.soldDate);
+    setValue("sellerName", attrProduct?.sellerName);
   }, [attrProduct]);
 
   const onSubmit = async (data) => {
@@ -34,11 +30,12 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
       brand: data.brand,
       category: data.category,
       model: data.model,
-      color: data.color,
-      mileage: data.mileage,
+      qty: data.qty,
       price: data.price,
-      status: data.status,
-      img: data.photo
+      buyerName: data.buyerName,
+      addressBuyer: data.addressBuyer,
+      soldDate: data.soldDate,
+      sellerName: data.sellerName,
     });
   };
 
@@ -86,7 +83,7 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
           <span className={styles.close} onClick={onClickCloseModal}>
             &times;
           </span>
-          <section className={styles.titleModal}>Vehicle</section>
+          <section className={styles.titleModal}>Sales</section>
           <form onSubmit={handleSubmit(onSubmit)}>
             <section className={styles.AllInputs}>
               <div>
@@ -146,36 +143,17 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
                 <input
                   type={"text"}
                   className={styles.inputModal}
-                  id="color"
-                  placeholder="Color"
-                  {...register("color", {
+                  id="qty"
+                  placeholder="Quantity"
+                  {...register("qty", {
                     required: {
                       value: true,
                       message: "Required",
                     },
                   })}
                 ></input>
-                {errors.color && (
-                  <p className={styles.errorMessage}>{errors.color.message}</p>
-                )}
-              </div>
-              <div>
-                <input
-                  type={"text"}
-                  className={styles.inputModal}
-                  id="mileage"
-                  placeholder="Mileage"
-                  {...register("mileage", {
-                    required: {
-                      value: true,
-                      message: "Required",
-                    },
-                  })}
-                ></input>
-                {errors.mileage && (
-                  <p className={styles.errorMessage}>
-                    {errors.mileage.message}
-                  </p>
+                {errors.qty && (
+                  <p className={styles.errorMessage}>{errors.qty.message}</p>
                 )}
               </div>
               <div>
@@ -195,44 +173,87 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
                   <p className={styles.errorMessage}>{errors.price.message}</p>
                 )}
               </div>
-              <div className={styles.selectStatus}>
-                <select
-                  className={styles.selectModal}
-                  id="status"
-                  {...register("status", {
-                    required: {
-                      value: true,
-                      message: "Required",
-                    },
-                  })}
-                >
-                  <option value="">Status</option>
-                  <option value="In stock">In stock</option>
-                  <option value="Sold">Sold</option>
-                </select>
-                {errors.status && (
-                  <p className={styles.errorMessage}>{errors.status.message}</p>
-                )}
-              </div>
-              
               <div>
                 <input
                   type={"text"}
-                  className={styles.inputImgModal}
-                  id="photo"
-                  placeholder="Add the link of the photo in PNG file"
-                  {...register("photo", {
+                  className={styles.inputModal}
+                  id="buyerName"
+                  placeholder="Buyer name"
+                  {...register("buyerName", {
                     required: {
                       value: true,
                       message: "Required",
                     },
                   })}
                 ></input>
-                {errors.photo && (
-                  <p className={styles.errorMessage}>{errors.photo.message}</p>
+                {errors.buyerName && (
+                  <p className={styles.errorMessage}>
+                    {errors.buyerName.message}
+                  </p>
                 )}
               </div>
-
+              <div>
+                <input
+                  type={"text"}
+                  className={styles.inputModal}
+                  id="addressBuyer"
+                  placeholder="Address buyer"
+                  {...register("addressBuyer", {
+                    required: {
+                      value: true,
+                      message: "Required",
+                    },
+                  })}
+                ></input>
+                {errors.addressBuyer && (
+                  <p className={styles.errorMessage}>
+                    {errors.addressBuyer.message}
+                  </p>
+                )}
+              </div>
+              <div>
+                <input
+                  type={"text"}
+                  className={styles.inputModal}
+                  id="soldDate"
+                  placeholder="Sold date"
+                  {...register("soldDate", {
+                    required: {
+                      value: true,
+                      message: "Required",
+                    },
+                  })}
+                ></input>
+                {errors.soldDate && (
+                  <p className={styles.errorMessage}>
+                    {errors.soldDate.message}
+                  </p>
+                )}
+              </div>
+              <div className={styles.selectStatus}>
+                <select
+                  className={styles.selectModal}
+                  id="sellerName"
+                  {...register("sellerName", {
+                    required: {
+                      value: true,
+                      message: "Required",
+                    },
+                  })}
+                >
+                  <option value="">seller name</option>
+                  <option value="Rocio Esther Alvarado Gomez">
+                    Rocio Alvarado
+                  </option>
+                  <option value="Juan José Casas Rubio">Juan Casas</option>
+                  <option value="Mariana Rios">Mariana Rios</option>
+                </select>
+                {errors.sellerName && (
+                  <p className={styles.errorMessage}>
+                    {errors.sellerName.message}
+                  </p>
+                )}
+              </div>
             </section>
             <section className={styles.areaSaveButton}>
               <button type="submit" className={styles.saveEditButton}>
@@ -245,3 +266,9 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
     </>
   ) : null;
 }
+
+ModalSales.propTypes = {
+  attrProduct: PropTypes.object,
+  onClickCloseModal: PropTypes.func.isRequired,
+  visible: PropTypes.bool.isRequired,
+};

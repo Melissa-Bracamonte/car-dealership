@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
-import { UserContext } from "./ContextUser";
+import { UserContext } from "../context/ContextUser";
 import { useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import styles from "./login.module.css";
-import logo from "../../img/logo.png";
 import women from "../../img/women.jpg";
+import Navbar from "../home/Navbar";
 
 const Login = () => {
   const {
@@ -21,7 +21,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       await loginUser(data.email, data.password);
-      navigate("/home");
+      navigate("/welcome");
     } catch (error) {
       switch (error.code) {
         case "auth/user-not-found":
@@ -36,11 +36,8 @@ const Login = () => {
 
   return (
     <>
-      <div className={styles.headerImg}>
-        <picture>
-          <img className={styles.logo} src={logo} alt="logo" />
-        </picture>
-      </div>
+      <Navbar />
+
       <section className={styles.loginAndPicture}>
         <section className={styles.containerLoginArea}>
           <form
