@@ -150,5 +150,61 @@
       "rol": "Seller",
       "id": "10"
     }
+  ],
+  "chosenCar": [
+    {
+      "brand": "Kia",
+      "category": "Suv",
+      "model": "2021",
+      "color": "Orange",
+      "qty": 3,
+      "soldDate": "2022-07-20T05:40:26.059Z",
+      "id": "rKm4kbS"
+    },
+    {
+      "brand": "Chryler",
+      "category": "Coupe",
+      "model": "2015",
+      "color": "Blue",
+      "qty": 1,
+      "soldDate": "2022-07-20T05:40:26.059Z",
+      "id": "siVZfXJ"
+    },
+    {
+      "brand": "Toyota",
+      "category": "Pick Up",
+      "model": "2022",
+      "color": "Red",
+      "qty": 1,
+      "soldDate": "2022-07-20T06:11:27.705Z",
+      "id": "e6oA0dH"
+    },
+    {
+      "brand": "Hyundai",
+      "category": "Sedan",
+      "model": "2019",
+      "color": "Gray",
+      "qty": 1,
+      "soldDate": "2022-07-20T06:11:27.705Z",
+      "id": "vfeumiH"
+    },
+    {
+      "brand": "Toyota",
+      "category": "Pick Up",
+      "model": "2022",
+      "color": "Red",
+      "qty": 1,
+      "soldDate": "2022-07-20T06:25:11.740Z",
+      "id": "Hmqz9Ys"
+    },
+    {
+      "brand": "Toyota",
+      "category": "Pick Up",
+      "model": "2022",
+      "color": "Red",
+      "qty": 1,
+      "soldDate": "2022-07-20T06:40:02.355Z",
+      "id": "SDGJ9oU"
+    }
   ]
 }

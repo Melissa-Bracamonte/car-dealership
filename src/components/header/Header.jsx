@@ -32,7 +32,7 @@ const Header = () => {
       <nav class="flex items-center justify-between flex-wrap bg-teal-900 p-6">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
           <span class="font-semibold text-xl tracking-tight">
-            <a href="/welcome">
+            <a href="/products">
               <img src={logo} alt="logo" style={logoStyle} />
             </a>
           </span>

@@ -1,0 +1,250 @@
+.containerNewOrder {
+  width: 100vw;
+  height: 50%;
+  margin-top: -20%;
+}
+
+.newOrderSection {
+  background-color: #3a6367;
+  height: 85%;
+  display: flex;
+  flex-flow: column;
+}
+
+.titleNewOrder {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  font-size: 20px;
+  margin-top: 2%;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: brown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputsOrder {
+  display: flex;
+  justify-content: start;
+}
+
+.titleAccount {
+  display: flex;
+  margin-left: 1%;
+  font-family: sans-serif;
+  font-size: 15px;
+  align-items: center;
+}
+
+.account {
+  display: flex;
+  width: 50px;
+  max-width: 90px;
+  height: 30px;
+  display: flex;
+  margin-left: 10px;
+  border: solid 2px;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.containerOrder {
+  height: 60vh;
+  overflow-y: scroll;
+  margin-left: 20px;
+}
+
+hr {
+  background-color: #000000;
+}
+
+.productRow {
+  display: grid;
+  grid-template-columns: repeat(1, 5%) repeat(4, 5%);
+  font-family: sans-serif;
+  font-size: 15px;
+  align-items: center;
+}
+
+.itemTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.inputCounter {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  text-align: center;
+  font-size: 15px;
+}
+
+.btnIcons {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.imgIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.bottonAreabtn {
+  display: flex;
+  justify-content: center;
+  margin: 10px 5px;
+  /* position: sticky; */
+}
+
+.bottonButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #b4ceb9;
+  width: 15%;
+  height: 100%;
+  max-width: 100px;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.bottonButtons:hover {
+  background-color: #4b8d59;
+}
+
+/* Inicia responsive mobile */
+
+@media only screen and (max-device-width: 850px) {
+  .containerNewOrder {
+    width: 100vw;
+    height: 50%;
+  }
+
+  .newOrderSection {
+    background-color: #3a6367;
+    height: 85%;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .titleNewOrder {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    font-size: 20px;
+    margin-top: 2%;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inputsOrder {
+    display: flex;
+    justify-content: start;
+  }
+
+  .titleAccount {
+    display: flex;
+    margin-left: 1%;
+    font-family: sans-serif;
+    font-size: 15px;
+    align-items: center;
+  }
+
+  .account {
+    display: flex;
+    width: 50px;
+    max-width: 90px;
+    height: 30px;
+    display: flex;
+    margin-top: inherit;
+    margin-left: 10px;
+    margin-bottom: 6px;
+    border: solid 2px;
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .containerOrder {
+    height: 60vh;
+    overflow-y: scroll;
+    margin-left: 20px;
+  }
+
+  hr {
+    background-color: #000000;
+  }
+
+  .productRow {
+    display: grid;
+    grid-template-columns: repeat(1, 8%) repeat(4, 8%);
+    font-family: sans-serif;
+    font-size: 15px;
+    align-items: center;
+  }
+
+  .itemTable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .inputCounter {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .btnIcons {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .imgIcon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .bottonAreabtn {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 5px;
+  }
+
+  .bottonButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: #b4ceb9;
+    width: 15%;
+    height: 100%;
+    max-width: 100px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+
+  .bottonButtons:hover {
+    background-color: #4b8d59;
+  }
+}

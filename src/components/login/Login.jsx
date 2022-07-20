@@ -21,7 +21,7 @@ const Login = () => {
   const onSubmit = async (data) => {
     try {
       await loginUser(data.email, data.password);
-      navigate("/welcome");
+      navigate("/products");
     } catch (error) {
       switch (error.code) {
         case "auth/user-not-found":

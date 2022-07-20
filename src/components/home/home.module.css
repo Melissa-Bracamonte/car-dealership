@@ -1,0 +1,17 @@
+@media only screen and (min-device-width: 1501px) {
+  .containerHome {
+    display: flex;
+    height: 82vh;
+    flex-direction: column-reverse;
+    margin-top: -16%;
+  }
+}
+
+@media only screen and (max-device-width: 1500px) {
+  .containerHome {
+    display: flex;
+    height: 82vh;
+    flex-direction: column-reverse;
+    margin-top: -34%;
+  }
+}
