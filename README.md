@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# Car Dealership
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Esta aplicación fue desarrollada en React como una SPA para un concecionario de carros, el diseño se hizo con Tailwind y css. Para este proyecto cree una mock API en Json Server para la permanencia de los datos.
 
-## Available Scripts
+Para la autenticación de usuarios usé el servicio de autenticación de Firebase.
 
-In the project directory, you can run:
+## Historias de usuarios
 
-### `npm start`
+Las hitorias de usuario son las siguientes:
+#### [Historia de usuario 1] 
+Yo como usuario quiero poder ver los productos que se ofrecen con su marca, categoría, modelo y precio y quiero poder agregarlos a la lista para cotizar el total y pagar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+#### [Historia de usuario 2] 
+Yo como concesionaria quiero poder ingresar al sistema para venta de autos para poder ver los productos que tenemos en stock, las ventas y datos del equipo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### [Historia de usuario 3] 
+Yo como concesionaria quiero llevar un registro de los vehículos clasificados en autos, camionetas y motocicletas.
 
-### `npm test`
+#### [Historia de usuario 4] 
+Yo como concesionaria quiero llevar un registro de las ventas realizadas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### [Historia de usuario 5] 
+Yo como concesionaria quiero gestionar a los empleados para mantener actualizado la informacion de los trabajadorxs.
 
-### `npm run build`
+## Diseño de la Interfaz de Usuarix
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Con base en lo anterior, se creo un un diseño de la interfaz en [Figma](https://www.figma.com/proto/fOWSda0LIrtxOKoer0zCLa/Car-dealership?node-id=23%3A115&scaling=scale-down&page-id=0%3A1&starting-point-node-id=23%3A115).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Conoce la app
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Puedes iniciar sesión con la siguiente cuenta:
+**E-mail:** concesionaria@cardealership.com
+**Contraseña:** cardealership

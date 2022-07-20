@@ -146,9 +146,21 @@
   "team": [
     {
       "employee": "Rocio Esther Alvarado Gomez",
-      "email": "rocio@cardealership.com",
+      "email": "rocio@ cardealership.com",
       "rol": "Seller",
       "id": "10"
+    },
+    {
+      "employee": "Juan Casas",
+      "email": "jc@ cardealership.com",
+      "rol": "Seller",
+      "id": "11"
+    },
+    {
+      "employee": "Mariana Rios",
+      "email": "mariana@ cardealership.com",
+      "rol": "Seller",
+      "id": "12"
     }
   ],
   "chosenCar": [
@@ -205,6 +217,42 @@
       "qty": 1,
       "soldDate": "2022-07-20T06:40:02.355Z",
       "id": "SDGJ9oU"
+    },
+    {
+      "brand": "Toyota",
+      "category": "Pick Up",
+      "model": "2022",
+      "color": "Red",
+      "qty": 1,
+      "soldDate": "2022-07-20T08:53:08.081Z",
+      "id": "uwavI70"
+    },
+    {
+      "brand": "Ford",
+      "category": "Minivan",
+      "model": "2015",
+      "color": "White",
+      "qty": 1,
+      "soldDate": "2022-07-20T08:53:50.791Z",
+      "id": "QhlRK3w"
+    },
+    {
+      "brand": "Kia",
+      "category": "Suv",
+      "model": "2021",
+      "color": "Orange",
+      "qty": 1,
+      "soldDate": "2022-07-20T14:42:00.087Z",
+      "id": "83x5G4c"
+    },
+    {
+      "brand": "Chevrolet",
+      "category": "Coupe",
+      "model": "2022",
+      "color": "Yellow",
+      "qty": 1,
+      "soldDate": "2022-07-20T14:45:02.206Z",
+      "id": "bXs0vl6"
     }
   ]
 }
