@@ -1,12 +1,12 @@
 # Car Dealership
 
-Esta aplicación fue desarrollada en React como una SPA para un concecionario de carros, el diseño se hizo con Tailwind y css. Para este proyecto cree una mock API en Json Server para la permanencia de los datos.
+Esta aplicación fue desarrollada en React como una SPA para un concesionario de carros, el diseño se hizo con Tailwind y css. Para este proyecto cree una mock API en Json Server para la permanencia de los datos.
 
 Para la autenticación de usuarios usé el servicio de autenticación de Firebase.
 
 ## Historias de usuarios
 
-Las hitorias de usuario son las siguientes:
+Las hitorias de usuario que fueron la base de la planeación son las siguientes:
 #### [Historia de usuario 1] 
 Yo como usuario quiero poder ver los productos que se ofrecen con su marca, categoría, modelo y precio y quiero poder agregarlos a la lista para cotizar el total y pagar
 
