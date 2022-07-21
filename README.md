@@ -1,8 +1,8 @@
 # Car Dealership
 
-Esta aplicación fue desarrollada en React como una SPA para un concesionario de carros, el diseño se hizo con Tailwind y css. Para este proyecto cree una mock API en Json Server para la permanencia de los datos.
+Esta aplicación fue desarrollada en React como una SPA para un concesionario de carros, el diseño se hizo con Tailwind y css. Para este proyecto cree una mock API en Json Server para la permanencia de los datos usando mockAPI.
 
-Para la autenticación de usuarios usé el servicio de autenticación de Firebase.
+Para la autenticación de usuarios usé el servicio de autenticación de Firebase y para el deploy usé Heroku.
 
 ## Historias de usuarios
 
@@ -28,6 +28,7 @@ Con base en lo anterior, se creo un un diseño de la interfaz en [Figma](https:/
 
 ### Conoce la app
 
-Puedes iniciar sesión con la siguiente cuenta:
+Visita la página web [aquí](https://car-dealership-meli.herokuapp.com/) , puedes iniciar sesión con la siguiente cuenta:
+
 **E-mail:** concesionaria@cardealership.com
 **Contraseña:** cardealership
