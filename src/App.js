@@ -16,7 +16,7 @@ function App() {
     <Routes>
       <Route exact path="/" element={<Home />} />
       <Route exact path="/login" element={<Login />} />
-      {user && <Route exact path="/pay-on-line" element={<PayOnLine />} />}
+      <Route exact path="/pay-on-line" element={<PayOnLine />} />
       {user && <Route exact path="/products" element={<Vehicles />} />}
       {user && <Route exact path="/sales" element={<Sales />} />}
       {user && <Route exact path="/team" element={<Team />} />}
