@@ -12,7 +12,8 @@ const Sales = () => {
   const [idDeletedProduct, setIdDeletedProduct] = useState("");
 
   const getAllProduct = () => {
-    fetch("http://localhost:3004/carSold")
+    // fetch("http://localhost:3004/carSold")
+    fetch("https://62d9b3b89eedb69963614c4e.mockapi.io/api/vehicles/carSold")
       .then((response) => response.json())
       .then((products) => setCarSold(products));
   };
@@ -22,7 +23,8 @@ const Sales = () => {
   }, []);
 
   const deleteProducts = (product) => {
-    fetch(`http://localhost:3004/carSold/${product.id}`, {
+    // fetch(`http://localhost:3004/carSold/${product.id}`, {
+      fetch(`https://62d9b3b89eedb69963614c4e.mockapi.io/api/vehicles/carSold/${product.id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())

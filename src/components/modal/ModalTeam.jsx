@@ -29,7 +29,8 @@ export function ModalTeam({ attrProduct, onClickCloseModal, visible }) {
 
   const saveEmployee = (employee) => {
     if (employee && employee.id) {
-      fetch(`http://localhost:3004/team/${employee.id}`, {
+      // fetch(`http://localhost:3004/team/${employee.id}`, {
+        fetch(`https://62d9b3b89eedb69963614c4e.mockapi.io/api/vehicles/team/${employee.id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",
@@ -42,7 +43,8 @@ export function ModalTeam({ attrProduct, onClickCloseModal, visible }) {
           onClickCloseModal();
         });
     } else {
-      fetch("http://localhost:3004/team", {
+      // fetch("http://localhost:3004/team", {
+        fetch("https://62d9b3b89eedb69963614c4e.mockapi.io/api/vehicles/team", {
         method: "POST",
         headers: {
           "content-type": "application/json",

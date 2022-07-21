@@ -12,7 +12,8 @@ const Team = () => {
   const [objPopup, setPopup] = useState({ visibility: false });
 
   const getAllTeam = () => {
-    fetch("http://localhost:3004/team")
+    // fetch("http://localhost:3004/team")
+    fetch("https://62d9b3b89eedb69963614c4e.mockapi.io/api/vehicles/team")
       .then((response) => response.json())
       .then((employees) => setTeam(employees));
   };
@@ -40,7 +41,8 @@ const Team = () => {
   };
 
   const deleteEmployee = (employee) => {
-    fetch(`http://localhost:3004/team/${employee.id}`, {
+    // fetch(`http://localhost:3004/team/${employee.id}`, {
+      fetch(`https://62d9b3b89eedb69963614c4e.mockapi.io/api/vehicles/team/${employee.id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())

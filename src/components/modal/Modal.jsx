@@ -44,7 +44,8 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
 
   const saveProduct = (product) => {
     if (product && product.id) {
-      fetch(`http://localhost:3004/vehicles/${product.id}`, {
+      // fetch(`http://localhost:3004/vehicles/${product.id}`, {
+        fetch(`https://62d9b3b89eedb69963614c4e.mockapi.io/api/vehicles/vehicles/${product.id}`, {
         method: "PUT",
         headers: {
           "content-type": "application/json",
@@ -57,7 +58,8 @@ export function Modal({ attrProduct, onClickCloseModal, visible }) {
           onClickCloseModal();
         });
     } else {
-      fetch("http://localhost:3004/vehicles", {
+      // fetch("http://localhost:3004/vehicles", {
+        fetch("https://62d9b3b89eedb69963614c4e.mockapi.io/api/vehicles/vehicles", {
         method: "POST",
         headers: {
           "content-type": "application/json",

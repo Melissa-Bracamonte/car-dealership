@@ -84,7 +84,8 @@ const ShoppingCart = () => {
       )
     );
     sendChosenProduct.forEach((ChosenProduct) => {
-      fetch("http://localhost:3004/chosenCar", {
+      // fetch("http://localhost:3004/chosenCar", {
+        fetch("https://62d9b3b89eedb69963614c4e.mockapi.io/api/vehicles/chosenCar", {
         method: "POST",
         headers: {
           "content-type": "application/json",
